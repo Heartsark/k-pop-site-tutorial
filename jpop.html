@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J-POP 소개</title>
+    <title>J-pop의 모든 것</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-brand">음악 세계</div>
-        <ul class="nav-links">
-            <li><a href="index.html">K-POP</a></li>
-            <li><a href="jpop.html" class="active">J-POP</a></li>
-            <li><a href="american.html">미국 POP</a></li>
-            <li><a href="spanish.html">스페인 POP</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">World Pop Music</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">K-POP</a></li>
+                <li class="active"><a href="jpop.html">J-POP</a></li>
+                <li><a href="american.html">American POP</a></li>
+                <li><a href="spanish.html">Spanish POP</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </nav>
 
     <!-- Swiper -->
@@ -26,7 +33,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="slide-content">
-                        <img src="https://images.unsplash.com/photo-1480796927426-f609979314bd" alt="일본 도시">
+                        <img src="https://images.unsplash.com/photo-1632751283608-bc05cd965c09" alt="Japanese Music">
                         <div class="slide-text">
                             <h2>일본의 음악 문화</h2>
                             <p>전통과 현대가 조화를 이루는 J-POP</p>
@@ -35,28 +42,28 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="slide-content">
-                        <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989" alt="일본 거리">
+                        <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989" alt="Anime Music">
                         <div class="slide-text">
-                            <h2>애니메이션과 음악</h2>
-                            <p>애니메이션 문화와 함께 발전한 J-POP</p>
+                            <h2>애니메이션 음악</h2>
+                            <p>세계적으로 사랑받는 일본 애니송</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slide-content">
-                        <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186" alt="일본 공연장">
+                        <img src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d" alt="Live Performance">
                         <div class="slide-text">
-                            <h2>라이브 하우스 문화</h2>
-                            <p>소규모 공연장에서 시작되는 음악의 여정</p>
+                            <h2>라이브 문화</h2>
+                            <p>열정적인 공연과 퍼포먼스</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slide-content">
-                        <img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3" alt="도쿄 야경">
+                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30" alt="Music Technology">
                         <div class="slide-text">
-                            <h2>도시 팝 컬처</h2>
-                            <p>현대 도시 문화와 함께하는 J-POP</p>
+                            <h2>음악 테크놀로지</h2>
+                            <p>첨단 기술과 함께 진화하는 J-POP</p>
                         </div>
                     </div>
                 </div>
@@ -66,53 +73,151 @@
     </div>
 
     <div class="container">
-        <section class="intro-section">
-            <h1>J-POP의 세계</h1>
-            <p>J-POP은 일본의 대중음악을 대표하는 장르로, 1990년대부터 독특한 멜로디와 세련된 프로덕션으로 아시아 음악 시장을 선도해왔습니다. 애니메이션 음악과의 긴밀한 관계, 다양한 하위 장르의 발전이 특징입니다.</p>
-        </section>
+        <header>
+            <h1>J-POP WAVE</h1>
+            <p class="subtitle">일본 대중음악의 새로운 물결</p>
+        </header>
 
-        <section class="venue-section">
-            <h2>주요 공연장</h2>
-            <div class="venue-container">
-                <div class="venue-list">
-                    <div class="venue-item" data-lat="35.6762" data-lng="139.6503" data-name="부도칸">
-                        <h3>부도칸</h3>
-                        <p>도쿄도 치요다구 기타노마루공원</p>
+        <main>
+            <section class="intro">
+                <h2>글로벌 J-pop</h2>
+                <p>J-pop은 독특한 멜로디와 세련된 프로듀싱으로 전 세계 음악 팬들의 사랑을 받고 있습니다. 애니메이션 음악부터 현대적인 팝까지, 다양한 장르를 아우르는 음악을 선보입니다.</p>
+            </section>
+
+            <section class="popular-groups">
+                <h2>최고의 J-pop 아티스트</h2>
+                <div class="group-list">
+                    <div class="group">
+                        <h3>YOASOBI</h3>
+                        <p>소설을 음악으로 만드는 독특한 콘셉트로 세계적 인기를 얻은 듀오</p>
                     </div>
-                    <div class="venue-item" data-lat="35.6277" data-lng="139.7649" data-name="제프 도쿄">
-                        <h3>제프 도쿄</h3>
-                        <p>도쿄도 고토구 아오미</p>
+                    <div class="group">
+                        <h3>Official HIGE DANdism</h3>
+                        <p>감성적인 멜로디와 가사로 사랑받는 밴드</p>
                     </div>
-                    <div class="venue-item" data-lat="35.6813" data-lng="139.7651" data-name="도쿄돔">
-                        <h3>도쿄돔</h3>
-                        <p>도쿄도 분쿄구 고라쿠</p>
-                    </div>
-                    <div class="venue-item" data-lat="35.6695" data-lng="139.7016" data-name="시부야 클럽 쿼터">
-                        <h3>시부야 클럽 쿼터</h3>
-                        <p>도쿄도 시부야구</p>
+                    <div class="group">
+                        <h3>Ado</h3>
+                        <p>독특한 보이스와 강력한 표현력으로 주목받는 신세대 아티스트</p>
                     </div>
                 </div>
-                <div id="map" class="venue-map"></div>
-            </div>
-        </section>
-    </div>
+            </section>
 
-    <footer class="footer">
-        <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-        </div>
-        <div class="footer-info">
-            <p>&copy; 2024 음악 세계. All rights reserved.</p>
-            <p>Contact: info@musicworld.com</p>
-        </div>
-    </footer>
+            <section class="latest-songs">
+                <h2>J-POP 최신곡</h2>
+                <div class="song-list">
+                    <div class="song">
+                        <h3>YOASOBI</h3>
+                        <p class="song-title">Idol</p>
+                        <p class="song-info">2024년 1월 발매 - 【推し】의 아이 OST</p>
+                    </div>
+                    <div class="song">
+                        <h3>Mrs. GREEN APPLE</h3>
+                        <p class="song-title">Magic</p>
+                        <p class="song-info">2024년 2월 발매</p>
+                    </div>
+                    <div class="song">
+                        <h3>Ado</h3>
+                        <p class="song-title">Show</p>
+                        <p class="song-info">2024년 1월 발매</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="characteristics">
+                <h2>J-pop의 매력 포인트</h2>
+                <ul>
+                    <li>세련된 프로듀싱과 정교한 사운드</li>
+                    <li>애니메이션과 결합된 독특한 문화</li>
+                    <li>다양한 장르의 조화로운 융합</li>
+                    <li>감성적인 멜로디와 서정적인 가사</li>
+                    <li>실력파 뮤지션들의 라이브 퍼포먼스</li>
+                </ul>
+            </section>
+
+            <section class="venues-section">
+                <h2>일본의 주요 공연장</h2>
+                <div class="venues-container">
+                    <div class="venues-list">
+                        <div class="venue-item active" data-lat="35.6277" data-lng="139.7294">
+                            <h3>일본 무도관</h3>
+                            <p>도쿄도 지요다구 기타노마루 공원 2-3</p>
+                            <span class="venue-capacity">수용 인원: 14,471명</span>
+                        </div>
+                        <div class="venue-item" data-lat="35.6298" data-lng="139.7016">
+                            <h3>도쿄 돔</h3>
+                            <p>도쿄도 분쿄구 고라쿠 1-3-61</p>
+                            <span class="venue-capacity">수용 인원: 55,000명</span>
+                        </div>
+                        <div class="venue-item" data-lat="35.6296" data-lng="139.6277">
+                            <h3>요요기 국립경기장</h3>
+                            <p>도쿄도 시부야구 진난 2-1-1</p>
+                            <span class="venue-capacity">수용 인원: 13,291명</span>
+                        </div>
+                        <div class="venue-item" data-lat="34.6873" data-lng="135.5262">
+                            <h3>오사카성 홀</h3>
+                            <p>오사카부 오사카시 주오구 오사카성 3-1</p>
+                            <span class="venue-capacity">수용 인원: 16,000명</span>
+                        </div>
+                        <div class="venue-item" data-lat="35.6277" data-lng="139.7713">
+                            <h3>마쿠하리 멧세</h3>
+                            <p>지바현 지바시 미하마구 나카세 2-1</p>
+                            <span class="venue-capacity">수용 인원: 최대 9개 홀</span>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <div id="map"></div>
+                        <div class="map-info">
+                            <div class="info-box">
+                                <i class="fas fa-info-circle"></i>
+                                <p>공연장을 클릭하면 상세 정보를 확인할 수 있습니다</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>음악 플랫폼</h4>
+                        <ul class="footer-links">
+                            <li><a href="https://www.spotify.com">Spotify J-pop 플레이리스트</a></li>
+                            <li><a href="https://music.apple.com">Apple Music 차트</a></li>
+                            <li><a href="https://www.youtube.com/music">YouTube Music</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>팔로우하기</h4>
+                        <ul class="social-links">
+                            <li><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>문의하기</h4>
+                        <p>비즈니스 문의: business@jpop.com</p>
+                        <p>팬클럽 문의: fanclub@jpop.com</p>
+                        <p>고객센터: 0120-123-456</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 J-POP WAVE. 모든 권리 보유.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
+        // 모바일 메뉴 토글
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
         // Swiper 초기화
         const swiper = new Swiper('.swiper', {
             // 기본 설정
@@ -163,49 +268,109 @@
             swiper.autoplay.start();
         });
 
-        // 지도 초기화
-        const map = L.map('map').setView([35.6762, 139.6503], 12);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        // Map initialization
+        const map = L.map('map', {
+            center: [35.6762, 139.6503],
+            zoom: 11,
+            zoomControl: false
+        });
+
+        // Custom map style
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 19
         }).addTo(map);
 
-        // 공연장 마커 추가
-        const venues = document.querySelectorAll('.venue-item');
-        const markers = {};
+        // Add zoom control to top-right
+        L.control.zoom({
+            position: 'topright'
+        }).addTo(map);
 
-        venues.forEach(venue => {
-            const lat = parseFloat(venue.dataset.lat);
-            const lng = parseFloat(venue.dataset.lng);
-            const name = venue.dataset.name;
-            
-            const marker = L.marker([lat, lng])
-                .bindPopup(name)
-                .addTo(map);
-            
-            markers[name] = marker;
+        // Custom icon
+        const venueIcon = L.icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
 
-            // 공연장 항목 클릭 이벤트
-            venue.addEventListener('click', () => {
-                map.setView([lat, lng], 15);
-                marker.openPopup();
+        let activeMarker = null;
+        const markers = [];
+
+        // Add markers for each venue
+        document.querySelectorAll('.venue-item').forEach(item => {
+            const lat = parseFloat(item.dataset.lat);
+            const lng = parseFloat(item.dataset.lng);
+            const title = item.querySelector('h3').textContent;
+            const address = item.querySelector('p').textContent;
+            const capacity = item.querySelector('.venue-capacity').textContent;
+
+            const marker = L.marker([lat, lng], {icon: venueIcon}).addTo(map);
+            
+            const popupContent = `
+                <div class="popup-content">
+                    <h4>${title}</h4>
+                    <p>${address}</p>
+                    <p class="capacity">${capacity}</p>
+                </div>
+            `;
+            
+            const popup = L.popup({
+                closeButton: false,
+                className: 'custom-popup'
+            }).setContent(popupContent);
+
+            marker.bindPopup(popup);
+
+            markers.push({marker, item, popup});
+
+            // Marker events
+            marker.on('click', () => {
+                document.querySelectorAll('.venue-item').forEach(v => v.classList.remove('active'));
+                item.classList.add('active');
+                item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                 
-                // 활성 상태 표시
-                venues.forEach(v => v.classList.remove('active'));
-                venue.classList.add('active');
+                if (activeMarker && activeMarker !== marker) {
+                    activeMarker.closePopup();
+                }
+                marker.openPopup();
+                activeMarker = marker;
+
+                map.flyTo(marker.getLatLng(), 14, {
+                    duration: 1
+                });
+            });
+
+            // Venue item click event
+            item.addEventListener('click', () => {
+                document.querySelectorAll('.venue-item').forEach(v => v.classList.remove('active'));
+                item.classList.add('active');
+
+                if (activeMarker && activeMarker !== marker) {
+                    activeMarker.closePopup();
+                }
+                marker.openPopup();
+                activeMarker = marker;
+
+                map.flyTo(marker.getLatLng(), 14, {
+                    duration: 1
+                });
             });
         });
 
-        // 마커 클릭 이벤트
-        Object.entries(markers).forEach(([name, marker]) => {
-            marker.on('click', () => {
-                const venue = Array.from(venues).find(v => v.dataset.name === name);
-                if (venue) {
-                    venues.forEach(v => v.classList.remove('active'));
-                    venue.classList.add('active');
-                    venue.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                }
-            });
+        // Initialize first venue
+        if (markers.length > 0) {
+            const firstMarker = markers[0].marker;
+            firstMarker.openPopup();
+            activeMarker = firstMarker;
+        }
+
+        // Handle map resize
+        map.on('resize', () => {
+            map.invalidateSize();
         });
     </script>
 </body>
-</html>
+</html> 

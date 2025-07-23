@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>스페인 POP 소개</title>
+    <title>Spanish Pop Music</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-brand">음악 세계</div>
-        <ul class="nav-links">
-            <li><a href="index.html">K-POP</a></li>
-            <li><a href="jpop.html">J-POP</a></li>
-            <li><a href="american.html">미국 POP</a></li>
-            <li><a href="spanish.html" class="active">스페인 POP</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">World Pop Music</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">K-POP</a></li>
+                <li><a href="jpop.html">J-POP</a></li>
+                <li><a href="american.html">American POP</a></li>
+                <li class="active"><a href="spanish.html">Spanish POP</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </nav>
 
     <!-- Swiper -->
@@ -26,37 +32,37 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="slide-content">
-                        <img src="https://images.unsplash.com/photo-1558642891-54be180ea339" alt="스페인 거리">
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7" alt="Latin Dance">
                         <div class="slide-text">
-                            <h2>정열의 음악</h2>
-                            <p>라틴 리듬으로 전하는 스페인의 감성</p>
+                            <h2>Ritmo Latino</h2>
+                            <p>El Poder de la Música Latina</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slide-content">
-                        <img src="https://images.unsplash.com/photo-1551651767-d5ffbdd04b83" alt="플라멩코">
+                        <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4" alt="Festival Latino">
                         <div class="slide-text">
-                            <h2>전통과 현대의 만남</h2>
-                            <p>플라멩코에서 현대 팝까지</p>
+                            <h2>Festivales</h2>
+                            <p>Celebrando Nuestra Cultura</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slide-content">
-                        <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747" alt="축제">
+                        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a" alt="Urban Latino">
                         <div class="slide-text">
-                            <h2>축제의 나라</h2>
-                            <p>음악과 함께하는 열정적인 축제</p>
+                            <h2>Música Urbana</h2>
+                            <p>El Nuevo Sonido Latino</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slide-content">
-                        <img src="https://images.unsplash.com/photo-1544070928-135f934f0e07" alt="콘서트">
+                        <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3" alt="Flamenco">
                         <div class="slide-text">
-                            <h2>글로벌 라틴 음악</h2>
-                            <p>세계를 매혹시키는 스페인어 팝</p>
+                            <h2>Fusión Musical</h2>
+                            <p>Tradición y Modernidad</p>
                         </div>
                     </div>
                 </div>
@@ -66,53 +72,150 @@
     </div>
 
     <div class="container">
-        <section class="intro-section">
-            <h1>스페인 POP의 세계</h1>
-            <p>스페인의 팝 음악은 전통적인 플라멩코와 현대적인 리듬이 조화를 이루며, 라틴 아메리카의 영향을 받아 독특한 음악적 정체성을 형성했습니다. 정열적인 리듬과 감성적인 멜로디로 전 세계 음악 팬들의 사랑을 받고 있습니다.</p>
-        </section>
+        <header>
+            <h1>SPANISH POP</h1>
+            <p class="subtitle">El Ritmo Latino Que Conquista El Mundo</p>
+        </header>
 
-        <section class="venue-section">
-            <h2>주요 공연장</h2>
-            <div class="venue-container">
-                <div class="venue-list">
-                    <div class="venue-item" data-lat="40.4530" data-lng="-3.6883" data-name="위즈링크 센터">
-                        <h3>위즈링크 센터</h3>
-                        <p>마드리드</p>
+        <main>
+            <section class="intro">
+                <h2>Global Spanish Pop</h2>
+                <p>Spanish Pop music brings the vibrant rhythms and passionate melodies of Latin culture to the global stage. With its infectious energy and diverse influences, it continues to captivate audiences worldwide.</p>
+            </section>
+
+            <section class="popular-groups">
+                <h2>Top Latin Artists</h2>
+                <div class="group-list">
+                    <div class="group">
+                        <h3>Rosalía</h3>
+                        <p>Revolutionary artist blending flamenco with modern pop</p>
                     </div>
-                    <div class="venue-item" data-lat="41.3809" data-lng="2.1228" data-name="팔라우 상 조르디">
-                        <h3>팔라우 상 조르디</h3>
-                        <p>바르셀로나</p>
+                    <div class="group">
+                        <h3>Bad Bunny</h3>
+                        <p>Global sensation pushing the boundaries of Latin music</p>
                     </div>
-                    <div class="venue-item" data-lat="37.3754" data-lng="-5.9875" data-name="라 카르투하">
-                        <h3>라 카르투하</h3>
-                        <p>세비야</p>
-                    </div>
-                    <div class="venue-item" data-lat="39.4697" data-lng="-0.3774" data-name="시티 오브 아츠">
-                        <h3>시티 오브 아츠</h3>
-                        <p>발렌시아</p>
+                    <div class="group">
+                        <h3>Karol G</h3>
+                        <p>Leading female voice in modern Latin pop and urban music</p>
                     </div>
                 </div>
-                <div id="map" class="venue-map"></div>
-            </div>
-        </section>
+            </section>
+
+            <section class="latest-songs">
+                <h2>Éxitos Recientes</h2>
+                <div class="song-list">
+                    <div class="song">
+                        <h3>Karol G</h3>
+                        <p class="song-title">CONTIGO</p>
+                        <p class="song-info">2024 - MAÑANA SERÁ BONITO</p>
+                    </div>
+                    <div class="song">
+                        <h3>Rosalía</h3>
+                        <p class="song-title">LLYLM</p>
+                        <p class="song-info">2024 Release</p>
+                    </div>
+                    <div class="song">
+                        <h3>Bad Bunny</h3>
+                        <p class="song-title">MONACO</p>
+                        <p class="song-info">Latest Single</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="characteristics">
+                <h2>La Magia del Pop Latino</h2>
+                <ul>
+                    <li>Fusion of traditional and modern rhythms</li>
+                    <li>Energetic dance beats and reggaeton influence</li>
+                    <li>Emotional and passionate performances</li>
+                    <li>Rich cultural storytelling</li>
+                    <li>Innovative genre-blending sounds</li>
+                </ul>
+            </section>
+
+            <section class="venues-section">
+                <h2>스페인어권의 대표 공연장</h2>
+                <div class="venues-container">
+                    <div class="venues-list">
+                        <div class="venue-item active" data-lat="40.4530" data-lng="-3.6883">
+                            <h3>위징크 센터</h3>
+                            <p>스페인 마드리드 펠리페 2세 거리</p>
+                            <span class="venue-capacity">수용 인원: 15,500명</span>
+                        </div>
+                        <div class="venue-item" data-lat="19.4029" data-lng="-99.1544">
+                            <h3>포로 솔</h3>
+                            <p>멕시코시티 비아둑토 강변로</p>
+                            <span class="venue-capacity">수용 인원: 65,000명</span>
+                        </div>
+                        <div class="venue-item" data-lat="-34.5454" data-lng="-58.4498">
+                            <h3>모비스타 아레나</h3>
+                            <p>아르헨티나 부에노스아이레스 움볼트 450번지</p>
+                            <span class="venue-capacity">수용 인원: 15,000명</span>
+                        </div>
+                        <div class="venue-item" data-lat="41.3805" data-lng="2.1826">
+                            <h3>팔라우 산트 조르디</h3>
+                            <p>스페인 바르셀로나 올림픽 거리</p>
+                            <span class="venue-capacity">수용 인원: 17,960명</span>
+                        </div>
+                        <div class="venue-item" data-lat="-23.5453" data-lng="-46.6373">
+                            <h3>알리안츠 파르케</h3>
+                            <p>브라질 상파울루 프란시스코 마타라조 거리</p>
+                            <span class="venue-capacity">수용 인원: 55,000명</span>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <div id="map"></div>
+                        <div class="map-info">
+                            <div class="info-box">
+                                <i class="fas fa-info-circle"></i>
+                                <p>공연장을 클릭하면 상세 정보를 확인할 수 있습니다</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Plataformas de Música</h4>
+                        <ul class="footer-links">
+                            <li><a href="https://www.spotify.com">Spotify Latino</a></li>
+                            <li><a href="https://music.apple.com">Apple Music Latino</a></li>
+                            <li><a href="https://www.youtube.com/music">YouTube Latino</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Síguenos</h4>
+                        <ul class="social-links">
+                            <li><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contacto</h4>
+                        <p>Negocios: business@latinpop.com</p>
+                        <p>Prensa: press@latinpop.com</p>
+                        <p>Soporte: +34 900 123 456</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Spanish Pop Music. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </main>
     </div>
 
-    <footer class="footer">
-        <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-        </div>
-        <div class="footer-info">
-            <p>&copy; 2024 음악 세계. All rights reserved.</p>
-            <p>Contact: info@musicworld.com</p>
-        </div>
-    </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
+        // 모바일 메뉴 토글
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
         // Swiper 초기화
         const swiper = new Swiper('.swiper', {
             // 기본 설정
@@ -162,50 +265,6 @@
         document.querySelector('.swiper').addEventListener('mouseleave', function() {
             swiper.autoplay.start();
         });
-
-        // 지도 초기화
-        const map = L.map('map').setView([40.4530, -3.6883], 6);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // 공연장 마커 추가
-        const venues = document.querySelectorAll('.venue-item');
-        const markers = {};
-
-        venues.forEach(venue => {
-            const lat = parseFloat(venue.dataset.lat);
-            const lng = parseFloat(venue.dataset.lng);
-            const name = venue.dataset.name;
-            
-            const marker = L.marker([lat, lng])
-                .bindPopup(name)
-                .addTo(map);
-            
-            markers[name] = marker;
-
-            // 공연장 항목 클릭 이벤트
-            venue.addEventListener('click', () => {
-                map.setView([lat, lng], 15);
-                marker.openPopup();
-                
-                // 활성 상태 표시
-                venues.forEach(v => v.classList.remove('active'));
-                venue.classList.add('active');
-            });
-        });
-
-        // 마커 클릭 이벤트
-        Object.entries(markers).forEach(([name, marker]) => {
-            marker.on('click', () => {
-                const venue = Array.from(venues).find(v => v.dataset.name === name);
-                if (venue) {
-                    venues.forEach(v => v.classList.remove('active'));
-                    venue.classList.add('active');
-                    venue.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                }
-            });
-        });
     </script>
 </body>
-</html>
+</html> 

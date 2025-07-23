@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>미국 POP 소개</title>
+    <title>미국 팝 음악</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-brand">음악 세계</div>
-        <ul class="nav-links">
-            <li><a href="index.html">K-POP</a></li>
-            <li><a href="jpop.html">J-POP</a></li>
-            <li><a href="american.html" class="active">미국 POP</a></li>
-            <li><a href="spanish.html">스페인 POP</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">세계 팝 음악</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">K-POP</a></li>
+                <li><a href="jpop.html">J-POP</a></li>
+                <li class="active"><a href="american.html">미국 POP</a></li>
+                <li><a href="spanish.html">스페인 POP</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </nav>
 
     <!-- Swiper -->
@@ -66,53 +73,151 @@
     </div>
 
     <div class="container">
-        <section class="intro-section">
-            <h1>미국 POP의 세계</h1>
-            <p>미국의 팝 음악은 20세기부터 현재까지 전 세계 대중음악의 중심이 되어왔습니다. R&B, 록, 힙합 등 다양한 장르의 융합과 혁신적인 프로덕션으로 글로벌 음악 트렌드를 이끌어가고 있습니다.</p>
-        </section>
+        <header>
+            <h1>미국 POP</h1>
+            <p class="subtitle">글로벌 팝 음악의 중심</p>
+        </header>
 
-        <section class="venue-section">
-            <h2>주요 공연장</h2>
-            <div class="venue-container">
-                <div class="venue-list">
-                    <div class="venue-item" data-lat="40.7505" data-lng="-73.9934" data-name="매디슨 스퀘어 가든">
-                        <h3>매디슨 스퀘어 가든</h3>
-                        <p>뉴욕, 맨해튼</p>
+        <main>
+            <section class="intro">
+                <h2>글로벌 미국 팝</h2>
+                <p>미국 팝 음악은 다양한 사운드와 혁신적인 프로덕션, 강력한 퍼포먼스로 세계 음악 트렌드를 선도하고 있습니다. 차트를 석권하는 히트곡부터 예술적 표현까지, 음악 진화의 최전선에 서 있습니다.</p>
+            </section>
+
+            <section class="popular-groups">
+                <h2>최고의 미국 아티스트</h2>
+                <div class="group-list">
+                    <div class="group">
+                        <h3>테일러 스위프트</h3>
+                        <p>작사/작곡 능력과 장르를 넘나드는 다재다능한 아티스트</p>
                     </div>
-                    <div class="venue-item" data-lat="34.1000" data-lng="-118.2873" data-name="할리우드 보울">
-                        <h3>할리우드 보울</h3>
-                        <p>로스앤젤레스, 캘리포니아</p>
+                    <div class="group">
+                        <h3>더 위켄드</h3>
+                        <p>독특한 사운드와 비주얼로 장르의 경계를 허무는 아티스트</p>
                     </div>
-                    <div class="venue-item" data-lat="36.1699" data-lng="-115.1398" data-name="T-모바일 아레나">
-                        <h3>T-모바일 아레나</h3>
-                        <p>라스베가스, 네바다</p>
-                    </div>
-                    <div class="venue-item" data-lat="41.8807" data-lng="-87.6742" data-name="유나이티드 센터">
-                        <h3>유나이티드 센터</h3>
-                        <p>시카고, 일리노이</p>
+                    <div class="group">
+                        <h3>올리비아 로드리고</h3>
+                        <p>파워풀한 보컬과 진정성 있는 가사의 차세대 팝스타</p>
                     </div>
                 </div>
-                <div id="map" class="venue-map"></div>
-            </div>
-        </section>
-    </div>
+            </section>
 
-    <footer class="footer">
-        <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-        </div>
-        <div class="footer-info">
-            <p>&copy; 2024 음악 세계. All rights reserved.</p>
-            <p>Contact: info@musicworld.com</p>
-        </div>
-    </footer>
+            <section class="latest-songs">
+                <h2>최신 히트곡</h2>
+                <div class="song-list">
+                    <div class="song">
+                        <h3>테일러 스위프트</h3>
+                        <p class="song-title">The Tortured Poets Department</p>
+                        <p class="song-info">2024년 4월 - 새 앨범</p>
+                    </div>
+                    <div class="song">
+                        <h3>아리아나 그란데</h3>
+                        <p class="song-title">yes, and?</p>
+                        <p class="song-info">2024년 1월 발매</p>
+                    </div>
+                    <div class="song">
+                        <h3>올리비아 로드리고</h3>
+                        <p class="song-title">vampire</p>
+                        <p class="song-info">GUTS 앨범 수록곡</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="characteristics">
+                <h2>미국 팝의 특별한 매력</h2>
+                <ul>
+                    <li>최첨단 프로덕션 기술</li>
+                    <li>다양한 음악적 영향과 장르</li>
+                    <li>파워풀한 보컬 퍼포먼스</li>
+                    <li>혁신적인 뮤직비디오와 비주얼</li>
+                    <li>전 세계적인 문화적 영향력</li>
+                </ul>
+            </section>
+
+            <section class="venues-section">
+                <h2>미국의 상징적인 공연장</h2>
+                <div class="venues-container">
+                    <div class="venues-list">
+                        <div class="venue-item active" data-lat="40.7505" data-lng="-73.9934">
+                            <h3>매디슨 스퀘어 가든</h3>
+                            <p>뉴욕 펜실베니아 플라자 4번지</p>
+                            <span class="venue-capacity">수용 인원: 20,789명</span>
+                        </div>
+                        <div class="venue-item" data-lat="34.1000" data-lng="-118.2873">
+                            <h3>할리우드 보울</h3>
+                            <p>로스앤젤레스 N 하이랜드 애비뉴 2301번지</p>
+                            <span class="venue-capacity">수용 인원: 17,500명</span>
+                        </div>
+                        <div class="venue-item" data-lat="36.1699" data-lng="-115.1398">
+                            <h3>T-모바일 아레나</h3>
+                            <p>라스베이거스 블루바드 S 3780번지</p>
+                            <span class="venue-capacity">수용 인원: 20,000명</span>
+                        </div>
+                        <div class="venue-item" data-lat="41.8807" data-lng="-87.6742">
+                            <h3>유나이티드 센터</h3>
+                            <p>시카고 W 매디슨 스트리트 1901번지</p>
+                            <span class="venue-capacity">수용 인원: 23,500명</span>
+                        </div>
+                        <div class="venue-item" data-lat="25.7814" data-lng="-80.1870">
+                            <h3>FTX 아레나</h3>
+                            <p>마이애미 비스케인 블루바드 601번지</p>
+                            <span class="venue-capacity">수용 인원: 19,600명</span>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <div id="map"></div>
+                        <div class="map-info">
+                            <div class="info-box">
+                                <i class="fas fa-info-circle"></i>
+                                <p>공연장을 클릭하면 상세 정보를 확인할 수 있습니다</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>음악 플랫폼</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.spotify.com">Spotify 차트</a></li>
+                        <li><a href="https://music.apple.com">Apple Music Top 100</a></li>
+                        <li><a href="https://www.billboard.com">빌보드 핫 100</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>팔로우하기</h4>
+                    <ul class="social-links">
+                        <li><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>문의하기</h4>
+                    <p>비즈니스: business@ampop.com</p>
+                    <p>언론 문의: press@ampop.com</p>
+                    <p>고객센터: 1-800-POP-MUSIC</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 미국 팝 음악. 모든 권리 보유.</p>
+            </div>
+        </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
+        // 모바일 메뉴 토글
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
         // Swiper 초기화
         const swiper = new Swiper('.swiper', {
             // 기본 설정
@@ -163,49 +268,8 @@
             swiper.autoplay.start();
         });
 
-        // 지도 초기화
-        const map = L.map('map').setView([40.7505, -73.9934], 4);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // 공연장 마커 추가
-        const venues = document.querySelectorAll('.venue-item');
-        const markers = {};
-
-        venues.forEach(venue => {
-            const lat = parseFloat(venue.dataset.lat);
-            const lng = parseFloat(venue.dataset.lng);
-            const name = venue.dataset.name;
-            
-            const marker = L.marker([lat, lng])
-                .bindPopup(name)
-                .addTo(map);
-            
-            markers[name] = marker;
-
-            // 공연장 항목 클릭 이벤트
-            venue.addEventListener('click', () => {
-                map.setView([lat, lng], 15);
-                marker.openPopup();
-                
-                // 활성 상태 표시
-                venues.forEach(v => v.classList.remove('active'));
-                venue.classList.add('active');
-            });
-        });
-
-        // 마커 클릭 이벤트
-        Object.entries(markers).forEach(([name, marker]) => {
-            marker.on('click', () => {
-                const venue = Array.from(venues).find(v => v.dataset.name === name);
-                if (venue) {
-                    venues.forEach(v => v.classList.remove('active'));
-                    venue.classList.add('active');
-                    venue.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                }
-            });
-        });
+        // 지도 관련 스크립트...
+        // ... existing map scripts ...
     </script>
 </body>
-</html>
+</html> 

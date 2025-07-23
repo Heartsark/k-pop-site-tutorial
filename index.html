@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K-POP 소개</title>
+    <title>K-pop의 모든 것</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-brand">음악 세계</div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">K-POP</a></li>
-            <li><a href="jpop.html">J-POP</a></li>
-            <li><a href="american.html">미국 POP</a></li>
-            <li><a href="spanish.html">스페인 POP</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">World Pop Music</a>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="index.html">K-POP</a></li>
+                <li><a href="jpop.html">J-POP</a></li>
+                <li><a href="american.html">American POP</a></li>
+                <li><a href="spanish.html">Spanish POP</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </nav>
 
     <!-- Swiper -->
@@ -26,37 +33,37 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="slide-content">
-                        <img src="https://images.unsplash.com/photo-1681844931547-54cb3b437909" alt="K-pop 콘서트">
+                        <img src="https://images.unsplash.com/photo-1683140411605-0c903edc5101" alt="K-pop Performance">
                         <div class="slide-text">
-                            <h2>글로벌 현상, K-POP</h2>
-                            <p>세계를 사로잡은 한국의 대중음악</p>
+                            <h2>글로벌 K-POP</h2>
+                            <p>세계를 하나로 만드는 한류 문화</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slide-content">
-                        <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf" alt="K-pop 댄스">
+                        <img src="https://images.unsplash.com/photo-1621746374593-1c840de55d3f" alt="K-pop Concert">
                         <div class="slide-text">
-                            <h2>퍼포먼스의 혁신</h2>
-                            <p>완벽한 안무와 화려한 무대</p>
+                            <h2>화려한 퍼포먼스</h2>
+                            <p>최고의 무대를 선사하는 K-POP</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slide-content">
-                        <img src="https://images.unsplash.com/photo-1619983081563-430f63602796" alt="K-pop 팬미팅">
+                        <img src="https://images.unsplash.com/photo-1619855544858-e8e275c3b31a" alt="K-pop Fans">
                         <div class="slide-text">
-                            <h2>팬 문화의 진화</h2>
-                            <p>전 세계 팬들과 함께하는 K-POP</p>
+                            <h2>팬덤 문화</h2>
+                            <p>전 세계 팬들과 함께 만드는 축제</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slide-content">
-                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7" alt="K-pop 음반">
+                        <img src="https://images.unsplash.com/photo-1605902711834-8b11c3e3ef2f" alt="K-pop Fashion">
                         <div class="slide-text">
-                            <h2>음악 산업의 새로운 기준</h2>
-                            <p>혁신적인 음악과 비주얼의 조화</p>
+                            <h2>트렌드 리더</h2>
+                            <p>패션과 뷰티를 선도하는 K-POP 아티스트</p>
                         </div>
                     </div>
                 </div>
@@ -66,53 +73,133 @@
     </div>
 
     <div class="container">
-        <section class="intro-section">
-            <h1>K-POP의 세계</h1>
-            <p>K-POP은 대한민국의 대중음악을 지칭하는 용어로, 1990년대 이후 독특한 음악 스타일과 퍼포먼스로 전 세계적인 인기를 얻고 있습니다. 화려한 퍼포먼스, 중독성 있는 멜로디, 세련된 프로덕션이 특징입니다.</p>
-        </section>
+        <header>
+            <h1>K-POP WAVE</h1>
+            <p class="subtitle">전 세계를 사로잡은 한국의 문화 아이콘</p>
+        </header>
 
-        <section class="venue-section">
-            <h2>주요 공연장</h2>
-            <div class="venue-container">
-                <div class="venue-list">
-                    <div class="venue-item" data-lat="37.5282" data-lng="127.1284" data-name="잠실종합운동장">
-                        <h3>잠실종합운동장</h3>
-                        <p>서울특별시 송파구 올림픽로 25</p>
+        <main>
+            <section class="intro">
+                <h2>글로벌 K-pop</h2>
+                <p>K-pop은 단순한 음악 장르를 넘어 전 세계인의 라이프스타일이 되었습니다. 독창적인 음악, 완벽한 퍼포먼스, 화려한 영상미로 세계 음악 시장의 새로운 기준이 되고 있습니다.</p>
+            </section>
+
+            <section class="popular-groups">
+                <h2>최고의 K-pop 아티스트</h2>
+                <div class="group-list">
+                    <div class="group">
+                        <h3>BTS (방탄소년단)</h3>
+                        <p>빌보드 차트 석권, 그래미 노미네이트, 전 세계 스타디움 투어를 성공적으로 마친 글로벌 아티스트</p>
                     </div>
-                    <div class="venue-item" data-lat="37.5273" data-lng="126.9324" data-name="고척스카이돔">
-                        <h3>고척스카이돔</h3>
-                        <p>서울특별시 구로구 경인로 430</p>
+                    <div class="group">
+                        <h3>BLACKPINK</h3>
+                        <p>코첼라 페스티벌 헤드라이너, 유튜브 구독자 최다 보유, 세계적인 패션 브랜드의 앰버서더</p>
                     </div>
-                    <div class="venue-item" data-lat="37.5115" data-lng="127.0595" data-name="올림픽공원">
-                        <h3>올림픽공원</h3>
-                        <p>서울특별시 송파구 올림픽로 424</p>
-                    </div>
-                    <div class="venue-item" data-lat="37.5139" data-lng="127.1027" data-name="샤롯데씨어터">
-                        <h3>샤롯데씨어터</h3>
-                        <p>서울특별시 송파구 올림픽로 240</p>
+                    <div class="group">
+                        <h3>NewJeans</h3>
+                        <p>데뷔와 동시에 세계적 주목을 받은 루키, 독특한 Y2K 콘셉트와 중독성 있는 멜로디의 소유자</p>
                     </div>
                 </div>
-                <div id="map" class="venue-map"></div>
-            </div>
-        </section>
+            </section>
+
+            <section class="latest-songs">
+                <h2>BTS 최신곡</h2>
+                <div class="song-list">
+                    <div class="song">
+                        <h3>정국 (BTS)</h3>
+                        <p class="song-title">Standing Next to You (Usher Remix)</p>
+                        <p class="song-info">2024년 1월 발매 - GOLDEN Remix</p>
+                    </div>
+                    <div class="song">
+                        <h3>지민 (BTS)</h3>
+                        <p class="song-title">Closer Than This</p>
+                        <p class="song-info">2023년 12월 발매 - 솔로 싱글</p>
+                    </div>
+                    <div class="song">
+                        <h3>BTS</h3>
+                        <p class="song-title">Take Two</p>
+                        <p class="song-info">2023년 6월 발매 - 데뷔 10주년 기념곡</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="characteristics">
+                <h2>K-pop의 매력 포인트</h2>
+                <ul>
+                    <li>완성도 높은 퍼포먼스와 칼군무</li>
+                    <li>트렌디한 음악과 강력한 후크송</li>
+                    <li>영화 같은 뮤직비디오 퀄리티</li>
+                    <li>아이돌과 팬 커뮤니티의 끈끈한 유대감</li>
+                    <li>패션 트렌드를 선도하는 스타일</li>
+                </ul>
+            </section>
+
+            <section class="venues-section">
+                <h2>주요 K-POP 공연장</h2>
+                <div class="venues-container">
+                    <div class="venues-list">
+                        <div class="venue-item active" data-lat="37.5286692" data-lng="127.0280602">
+                            <h3>올림픽공원 체조경기장</h3>
+                            <p>서울특별시 송파구 올림픽로 424</p>
+                        </div>
+                        <div class="venue-item" data-lat="37.5824883" data-lng="127.0144838">
+                            <h3>잠실실내체육관</h3>
+                            <p>서울특별시 송파구 올림픽로 25</p>
+                        </div>
+                        <div class="venue-item" data-lat="37.5516787" data-lng="126.9381256">
+                            <h3>고척스카이돔</h3>
+                            <p>서울특별시 구로구 경인로 430</p>
+                        </div>
+                        <div class="venue-item" data-lat="37.5275253" data-lng="126.9424778">
+                            <h3>블루스퀘어</h3>
+                            <p>서울특별시 용산구 이태원로 294</p>
+                        </div>
+                    </div>
+                    <div id="map" style="width:100%;height:400px;"></div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>음악 플랫폼</h4>
+                        <ul class="footer-links">
+                            <li><a href="https://www.melon.com">멜론 차트 바로가기</a></li>
+                            <li><a href="https://www.genie.co.kr">지니뮤직 차트 보기</a></li>
+                            <li><a href="https://www.spotify.com">Spotify K-pop 플레이리스트</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>팔로우하기</h4>
+                        <ul class="social-links">
+                            <li><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>문의하기</h4>
+                        <p>비즈니스 문의: business@kpop.com</p>
+                        <p>팬클럽 문의: fanclub@kpop.com</p>
+                        <p>고객센터: 1588-1588</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 K-POP WAVE. 모든 권리 보유.</p>
+                </div>
+            </footer>
+        </main>
     </div>
-
-    <footer class="footer">
-        <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-        </div>
-        <div class="footer-info">
-            <p>&copy; 2024 음악 세계. All rights reserved.</p>
-            <p>Contact: info@musicworld.com</p>
-        </div>
-    </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
+        // 모바일 메뉴 토글
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
         // Swiper 초기화
         const swiper = new Swiper('.swiper', {
             // 기본 설정
@@ -163,49 +250,99 @@
             swiper.autoplay.start();
         });
 
-        // 지도 초기화
-        const map = L.map('map').setView([37.5282, 127.1284], 12);
+        // OpenStreetMap 초기화
+        var map = L.map('map').setView([37.5286692, 127.0280602], 12);
+        
+        // OpenStreetMap 타일 레이어 추가
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        // 공연장 마커 추가
-        const venues = document.querySelectorAll('.venue-item');
-        const markers = {};
-
-        venues.forEach(venue => {
-            const lat = parseFloat(venue.dataset.lat);
-            const lng = parseFloat(venue.dataset.lng);
-            const name = venue.dataset.name;
-            
-            const marker = L.marker([lat, lng])
-                .bindPopup(name)
-                .addTo(map);
-            
-            markers[name] = marker;
-
-            // 공연장 항목 클릭 이벤트
-            venue.addEventListener('click', () => {
-                map.setView([lat, lng], 15);
-                marker.openPopup();
-                
-                // 활성 상태 표시
-                venues.forEach(v => v.classList.remove('active'));
-                venue.classList.add('active');
-            });
+        // 마커 아이콘 설정
+        var venueIcon = L.icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
+            shadowSize: [41, 41]
         });
 
-        // 마커 클릭 이벤트
-        Object.entries(markers).forEach(([name, marker]) => {
-            marker.on('click', () => {
-                const venue = Array.from(venues).find(v => v.dataset.name === name);
-                if (venue) {
-                    venues.forEach(v => v.classList.remove('active'));
-                    venue.classList.add('active');
-                    venue.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        // 마커와 팝업을 저장할 배열
+        var markers = [];
+        var activeMarker = null;
+
+        // 공연장 목록의 각 아이템에 대해 마커 생성
+        document.querySelectorAll('.venue-item').forEach(function(item) {
+            var lat = parseFloat(item.dataset.lat);
+            var lng = parseFloat(item.dataset.lng);
+            var title = item.querySelector('h3').textContent;
+            var address = item.querySelector('p').textContent;
+
+            // 마커 생성
+            var marker = L.marker([lat, lng], {icon: venueIcon}).addTo(map);
+            
+            // 팝업 생성
+            var popup = L.popup()
+                .setContent('<div class="popup-content"><h4>' + title + '</h4><p>' + address + '</p></div>');
+
+            // 마커 클릭 이벤트
+            marker.bindPopup(popup);
+
+            markers.push({
+                marker: marker,
+                popup: popup,
+                item: item
+            });
+
+            // 공연장 목록 클릭 이벤트
+            item.addEventListener('click', function() {
+                // 활성화된 아이템 스타일 변경
+                document.querySelectorAll('.venue-item').forEach(v => v.classList.remove('active'));
+                item.classList.add('active');
+
+                // 지도 중심 이동 및 줌
+                map.setView([lat, lng], 15, {
+                    animate: true,
+                    duration: 1
+                });
+
+                // 이전 활성 마커의 팝업 닫기
+                if (activeMarker && activeMarker !== marker) {
+                    activeMarker.closePopup();
+                }
+
+                // 현재 마커의 팝업 열기
+                marker.openPopup();
+                activeMarker = marker;
+            });
+
+            // 마커 마우스오버 이벤트
+            marker.on('mouseover', function() {
+                if (!marker.isPopupOpen()) {
+                    marker.openPopup();
+                }
+            });
+
+            // 마커 마우스아웃 이벤트
+            marker.on('mouseout', function() {
+                if (activeMarker !== marker) {
+                    marker.closePopup();
                 }
             });
         });
+
+        // 첫 번째 마커 활성화
+        if (markers.length > 0) {
+            markers[0].item.classList.add('active');
+            markers[0].marker.openPopup();
+            activeMarker = markers[0].marker;
+        }
+
+        // 지도 크기 조정 이벤트
+        map.on('resize', function() {
+            map.invalidateSize();
+        });
     </script>
 </body>
-</html>
+</html> 
