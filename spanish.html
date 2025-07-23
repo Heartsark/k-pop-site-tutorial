@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스페인 POP 소개</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">음악 세계</div>
+        <ul class="nav-links">
+            <li><a href="index.html">K-POP</a></li>
+            <li><a href="jpop.html">J-POP</a></li>
+            <li><a href="american.html">미국 POP</a></li>
+            <li><a href="spanish.html" class="active">스페인 POP</a></li>
+        </ul>
+    </nav>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img src="https://images.unsplash.com/photo-1558642891-54be180ea339" alt="스페인 거리">
+                        <div class="slide-text">
+                            <h2>정열의 음악</h2>
+                            <p>라틴 리듬으로 전하는 스페인의 감성</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img src="https://images.unsplash.com/photo-1551651767-d5ffbdd04b83" alt="플라멩코">
+                        <div class="slide-text">
+                            <h2>전통과 현대의 만남</h2>
+                            <p>플라멩코에서 현대 팝까지</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747" alt="축제">
+                        <div class="slide-text">
+                            <h2>축제의 나라</h2>
+                            <p>음악과 함께하는 열정적인 축제</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img src="https://images.unsplash.com/photo-1544070928-135f934f0e07" alt="콘서트">
+                        <div class="slide-text">
+                            <h2>글로벌 라틴 음악</h2>
+                            <p>세계를 매혹시키는 스페인어 팝</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="intro-section">
+            <h1>스페인 POP의 세계</h1>
+            <p>스페인의 팝 음악은 전통적인 플라멩코와 현대적인 리듬이 조화를 이루며, 라틴 아메리카의 영향을 받아 독특한 음악적 정체성을 형성했습니다. 정열적인 리듬과 감성적인 멜로디로 전 세계 음악 팬들의 사랑을 받고 있습니다.</p>
+        </section>
+
+        <section class="venue-section">
+            <h2>주요 공연장</h2>
+            <div class="venue-container">
+                <div class="venue-list">
+                    <div class="venue-item" data-lat="40.4530" data-lng="-3.6883" data-name="위즈링크 센터">
+                        <h3>위즈링크 센터</h3>
+                        <p>마드리드</p>
+                    </div>
+                    <div class="venue-item" data-lat="41.3809" data-lng="2.1228" data-name="팔라우 상 조르디">
+                        <h3>팔라우 상 조르디</h3>
+                        <p>바르셀로나</p>
+                    </div>
+                    <div class="venue-item" data-lat="37.3754" data-lng="-5.9875" data-name="라 카르투하">
+                        <h3>라 카르투하</h3>
+                        <p>세비야</p>
+                    </div>
+                    <div class="venue-item" data-lat="39.4697" data-lng="-0.3774" data-name="시티 오브 아츠">
+                        <h3>시티 오브 아츠</h3>
+                        <p>발렌시아</p>
+                    </div>
+                </div>
+                <div id="map" class="venue-map"></div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; 2024 음악 세계. All rights reserved.</p>
+            <p>Contact: info@musicworld.com</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Swiper 초기화
+        const swiper = new Swiper('.swiper', {
+            // 기본 설정
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            speed: 1000,
+            
+            // 자동 재생 설정
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+                waitForTransition: true,
+            },
+
+            // 페이드 효과
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            
+            // 페이지네이션
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + ' swiper-pagination-custom"></span>';
+                }
+            },
+
+            // 키보드 컨트롤
+            keyboard: {
+                enabled: true,
+                onlyInViewport: true,
+            },
+        });
+
+        // 페이지 포커스 복귀 시 자동 재생 재시작
+        document.addEventListener('visibilitychange', function() {
+            if (document.visibilityState === 'visible') {
+                swiper.autoplay.start();
+            }
+        });
+
+        // 마우스가 슬라이더를 벗어날 때 자동 재생 재시작
+        document.querySelector('.swiper').addEventListener('mouseleave', function() {
+            swiper.autoplay.start();
+        });
+
+        // 지도 초기화
+        const map = L.map('map').setView([40.4530, -3.6883], 6);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // 공연장 마커 추가
+        const venues = document.querySelectorAll('.venue-item');
+        const markers = {};
+
+        venues.forEach(venue => {
+            const lat = parseFloat(venue.dataset.lat);
+            const lng = parseFloat(venue.dataset.lng);
+            const name = venue.dataset.name;
+            
+            const marker = L.marker([lat, lng])
+                .bindPopup(name)
+                .addTo(map);
+            
+            markers[name] = marker;
+
+            // 공연장 항목 클릭 이벤트
+            venue.addEventListener('click', () => {
+                map.setView([lat, lng], 15);
+                marker.openPopup();
+                
+                // 활성 상태 표시
+                venues.forEach(v => v.classList.remove('active'));
+                venue.classList.add('active');
+            });
+        });
+
+        // 마커 클릭 이벤트
+        Object.entries(markers).forEach(([name, marker]) => {
+            marker.on('click', () => {
+                const venue = Array.from(venues).find(v => v.dataset.name === name);
+                if (venue) {
+                    venues.forEach(v => v.classList.remove('active'));
+                    venue.classList.add('active');
+                    venue.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
