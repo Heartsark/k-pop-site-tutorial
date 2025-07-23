@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 POP 소개</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">음악 세계</div>
+        <ul class="nav-links">
+            <li><a href="index.html">K-POP</a></li>
+            <li><a href="jpop.html">J-POP</a></li>
+            <li><a href="american.html" class="active">미국 POP</a></li>
+            <li><a href="spanish.html">스페인 POP</a></li>
+        </ul>
+    </nav>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f" alt="미국 콘서트">
+                        <div class="slide-text">
+                            <h2>글로벌 음악의 중심</h2>
+                            <p>세계 음악 산업을 선도하는 미국 팝</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745" alt="음악 페스티벌">
+                        <div class="slide-text">
+                            <h2>페스티벌 문화</h2>
+                            <p>코첼라부터 롤라팔루자까지, 세계적인 음악 축제</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="레코딩 스튜디오">
+                        <div class="slide-text">
+                            <h2>음악 프로덕션</h2>
+                            <p>최첨단 기술로 만들어내는 완벽한 사운드</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae" alt="라이브 공연">
+                        <div class="slide-text">
+                            <h2>라이브 엔터테인먼트</h2>
+                            <p>화려한 무대 위 펼쳐지는 감동의 순간</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="intro-section">
+            <h1>미국 POP의 세계</h1>
+            <p>미국의 팝 음악은 20세기부터 현재까지 전 세계 대중음악의 중심이 되어왔습니다. R&B, 록, 힙합 등 다양한 장르의 융합과 혁신적인 프로덕션으로 글로벌 음악 트렌드를 이끌어가고 있습니다.</p>
+        </section>
+
+        <section class="venue-section">
+            <h2>주요 공연장</h2>
+            <div class="venue-container">
+                <div class="venue-list">
+                    <div class="venue-item" data-lat="40.7505" data-lng="-73.9934" data-name="매디슨 스퀘어 가든">
+                        <h3>매디슨 스퀘어 가든</h3>
+                        <p>뉴욕, 맨해튼</p>
+                    </div>
+                    <div class="venue-item" data-lat="34.1000" data-lng="-118.2873" data-name="할리우드 보울">
+                        <h3>할리우드 보울</h3>
+                        <p>로스앤젤레스, 캘리포니아</p>
+                    </div>
+                    <div class="venue-item" data-lat="36.1699" data-lng="-115.1398" data-name="T-모바일 아레나">
+                        <h3>T-모바일 아레나</h3>
+                        <p>라스베가스, 네바다</p>
+                    </div>
+                    <div class="venue-item" data-lat="41.8807" data-lng="-87.6742" data-name="유나이티드 센터">
+                        <h3>유나이티드 센터</h3>
+                        <p>시카고, 일리노이</p>
+                    </div>
+                </div>
+                <div id="map" class="venue-map"></div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; 2024 음악 세계. All rights reserved.</p>
+            <p>Contact: info@musicworld.com</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Swiper 초기화
+        const swiper = new Swiper('.swiper', {
+            // 기본 설정
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            speed: 1000,
+            
+            // 자동 재생 설정
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+                waitForTransition: true,
+            },
+
+            // 페이드 효과
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            
+            // 페이지네이션
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + ' swiper-pagination-custom"></span>';
+                }
+            },
+
+            // 키보드 컨트롤
+            keyboard: {
+                enabled: true,
+                onlyInViewport: true,
+            },
+        });
+
+        // 페이지 포커스 복귀 시 자동 재생 재시작
+        document.addEventListener('visibilitychange', function() {
+            if (document.visibilityState === 'visible') {
+                swiper.autoplay.start();
+            }
+        });
+
+        // 마우스가 슬라이더를 벗어날 때 자동 재생 재시작
+        document.querySelector('.swiper').addEventListener('mouseleave', function() {
+            swiper.autoplay.start();
+        });
+
+        // 지도 초기화
+        const map = L.map('map').setView([40.7505, -73.9934], 4);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // 공연장 마커 추가
+        const venues = document.querySelectorAll('.venue-item');
+        const markers = {};
+
+        venues.forEach(venue => {
+            const lat = parseFloat(venue.dataset.lat);
+            const lng = parseFloat(venue.dataset.lng);
+            const name = venue.dataset.name;
+            
+            const marker = L.marker([lat, lng])
+                .bindPopup(name)
+                .addTo(map);
+            
+            markers[name] = marker;
+
+            // 공연장 항목 클릭 이벤트
+            venue.addEventListener('click', () => {
+                map.setView([lat, lng], 15);
+                marker.openPopup();
+                
+                // 활성 상태 표시
+                venues.forEach(v => v.classList.remove('active'));
+                venue.classList.add('active');
+            });
+        });
+
+        // 마커 클릭 이벤트
+        Object.entries(markers).forEach(([name, marker]) => {
+            marker.on('click', () => {
+                const venue = Array.from(venues).find(v => v.dataset.name === name);
+                if (venue) {
+                    venues.forEach(v => v.classList.remove('active'));
+                    venue.classList.add('active');
+                    venue.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
